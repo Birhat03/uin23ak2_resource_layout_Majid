@@ -94,3 +94,36 @@ const resources = [
         ]
     },
 ]
+
+const menu = document.getElementById("menu")
+let menuHTML = ""
+
+function mapping() {
+
+resources.map(category => {
+
+
+    let subMenu = ``;
+    category.sources.map((item) => {
+        subMenu += `
+        <li><a target="blank" href="${item.url}">${item.title}</a></li>
+        `;
+    });
+
+
+    menuHTML += `
+    <section class="main">
+    <div class="open">
+    <h1>${category.category}</h1>
+    <p class="text">${category.text}</p>
+    <ul class="subMenu">
+    ${subMenu}
+    </ul>
+    </div>
+    </section>
+    `
+})
+
+menu.innerHTML = `<ul class="mainMenu">
+${menuHTML}</ul>`
+}
