@@ -136,7 +136,9 @@ HTMLresources.map((html) => {
 </ul>
 
 `})
+
 HTMLbtn.classList.add("active");
+
 CSSbtn.classList.remove("active");
 JSbtn.classList.remove("active");
 ReactBtn.classList.remove("active");
@@ -162,7 +164,9 @@ function HTMLmap(){
     </ul>
     
     `})
+
     HTMLbtn.classList.add("active");
+
     CSSbtn.classList.remove("active");
     JSbtn.classList.remove("active");
     ReactBtn.classList.remove("active");
@@ -191,7 +195,9 @@ function CSSmap(){
     </ul>
     
     `})
+
     CSSbtn.classList.add("active");
+
     HTMLbtn.classList.remove("active");
     JSbtn.classList.remove("active");
     ReactBtn.classList.remove("active");
@@ -219,6 +225,7 @@ function JSmap(){
     `})
 
     JSbtn.classList.add("active");
+
     HTMLbtn.classList.remove("active");
     CSSbtn.classList.remove("active");
     ReactBtn.classList.remove("active");
@@ -244,7 +251,9 @@ function ReactMap(){
     </ul>
     
     `})
+
     ReactBtn.classList.add("active");
+
     HTMLbtn.classList.remove("active");
     CSSbtn.classList.remove("active");
     JSbtn.classList.remove("active");
@@ -269,66 +278,11 @@ function SanityMap(){
     </ul>
     
     `})
+    
     SanityBtn.classList.add("active");
+
     HTMLbtn.classList.remove("active");
     CSSbtn.classList.remove("active");
     JSbtn.classList.remove("active");
     ReactBtn.classList.remove("active");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*const menu = document.getElementById("menu")
-let menuHTML = ""
-
-function mapping() {
-
-resources.map(category => {
-
-
-    let subMenu = ``;
-    category.sources.map((item) => {
-        subMenu += `
-        <li><a target="blank" href="${item.url}">${item.title}</a></li>
-        `;
-    });
-
-
-    menuHTML += `
-    <section class="main">
-    <div class="open">
-    <h1>${category.category}</h1>
-    <p class="text">${category.text}</p>
-    <ul class="subMenu">
-    ${subMenu}
-    </ul>
-    </div>
-    </section>
-    `
-})
-
-menu.innerHTML = `<ul class="mainMenu">
-${menuHTML}</ul>`
-} */
