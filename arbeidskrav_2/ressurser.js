@@ -97,22 +97,16 @@ const resources = [
 
 
 const HTMLresources = resources.filter((html) => html.category === "HTML")
-console.log(HTMLresources)
 
 const CSSresources = resources.filter((css) => css.category === "CSS")
-console.log(CSSresources)
 
 const JSresources = resources.filter((js) => js.category === "JavaScript")
-console.log(JSresources)
 
 const ReactResources = resources.filter((react) => react.category === "React")
-console.log(ReactResources)
 
 const SanityResources = resources.filter((sanity) => sanity.category === "Sanity and headless CMS")
-console.log(SanityResources)
 
 const menu = document.getElementById("menu")
-//const menuHTMl = ""
 const HTMLbtn = document.getElementById("HTMLbtn")
 const CSSbtn = document.getElementById("CSSbtn")
 const JSbtn = document.getElementById("JSbtn")
@@ -139,14 +133,8 @@ HTMLresources.map((html) => {
 
 HTMLbtn.classList.add("active");
 
-CSSbtn.classList.remove("active");
-JSbtn.classList.remove("active");
-ReactBtn.classList.remove("active");
-SanityBtn.classList.remove("active");
-
 function HTMLmap(){
 
-   
     HTMLresources.map((html) => {
         
         let links = ``;
@@ -177,7 +165,6 @@ function HTMLmap(){
 
 function CSSmap(){
 
-   
     CSSresources.map((css) => {
         
         let links = ``;
@@ -232,7 +219,6 @@ function JSmap(){
     SanityBtn.classList.remove("active");
 }
 
-
 function ReactMap(){
     ReactResources.map((react) => {
         
@@ -278,7 +264,7 @@ function SanityMap(){
     </ul>
     
     `})
-    
+
     SanityBtn.classList.add("active");
 
     HTMLbtn.classList.remove("active");
