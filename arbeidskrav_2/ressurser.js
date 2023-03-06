@@ -113,23 +113,6 @@ const JSbtn = document.getElementById("JSbtn")
 const ReactBtn = document.getElementById("ReactBtn")
 const SanityBtn = document.getElementById("SanityBtn")
 
-HTMLresources.map((html) => {
-        
-    let links = ``;
-    html.sources.map((link) => {
-        links += `
-        <li><a target="blank" href="${link.url}">${link.title}</a></li>
-        `;
-    });
-
-    menu.innerHTML = `
-<h2>${html.category}</h2>
-<p>${html.text}</p>
-<ul>
-    ${links}
-</ul>
-
-`})
 
 HTMLbtn.classList.add("active");
 
@@ -272,3 +255,5 @@ function SanityMap(){
     JSbtn.classList.remove("active");
     ReactBtn.classList.remove("active");
 }
+
+HTMLmap()
